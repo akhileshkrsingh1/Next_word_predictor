@@ -1,6 +1,6 @@
 # FAQ Processing using Tokenization
 
-This project uses TensorFlow's `Tokenizer` from the `tensorflow.keras.preprocessing.text` module to tokenize and process the FAQs for a course.
+This project uses TensorFlow's `Tokenizer` from the `tensorflow.keras.preprocessing.text` module to tokenize and process the FAQs for a course
 
 ## Table of Contents
 - [Project Description](#project-description)
