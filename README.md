@@ -1,8 +1,6 @@
-# Next_word predictor
+# FAQ Processing using Tokenization
 
-# Data Science Mentorship Program (DSMP 2023) FAQ Processing
-
-This project uses TensorFlow's `Tokenizer` from the `tensorflow.keras.preprocessing.text` module to tokenize and process the FAQs of the **Data Science Mentorship Program (DSMP 2023)**.
+This project uses TensorFlow's `Tokenizer` from the `tensorflow.keras.preprocessing.text` module to tokenize and process the FAQs for a course.
 
 ## Table of Contents
 - [Project Description](#project-description)
@@ -16,7 +14,7 @@ This project uses TensorFlow's `Tokenizer` from the `tensorflow.keras.preprocess
 
 ## Project Description
 
-This project tokenizes the frequently asked questions (FAQs) provided for the **DSMP 2023**. It aims to process the FAQ content using NLP techniques, specifically tokenization. Tokenization is the first step toward preparing text data for machine learning models, and this project provides a simple and straightforward approach to that task.
+This project tokenizes the frequently asked questions (FAQs) provided for a data science course. It aims to process the FAQ content using NLP techniques, specifically tokenization. Tokenization is the first step toward preparing text data for machine learning models, and this project provides a simple and straightforward approach to that task.
 
 The key objective of the project is to:
 - Tokenize the FAQ dataset.
@@ -24,7 +22,7 @@ The key objective of the project is to:
 
 ## FAQ Dataset
 
-The FAQ dataset covers the following topics about the Data Science Mentorship Program:
+The FAQ dataset covers the following topics about the course:
 - Course fee and payment details.
 - Course duration and syllabus.
 - Class schedules and live session information.
@@ -48,8 +46,8 @@ The FAQ dataset covers the following topics about the Data Science Mentorship Pr
 ### Installation
 1. Clone this repository:
     ```bash
-    git clone (https://github.com/akhileshkrsingh1/Next_word_predictor)
-    cd dsmp-faq-tokenizer
+    git clone https://github.com/yourusername/faq-tokenizer.git
+    cd faq-tokenizer
     ```
 
 2. Install required dependencies:
@@ -87,4 +85,3 @@ for sentence in faqs.split('\n'):
   tokenized_sentence = tokenizer.texts_to_sequences([sentence])[0]
   for i in range(1, len(tokenized_sentence)):
     input_sequences.append(tokenized_sentence[:i+1])
-
